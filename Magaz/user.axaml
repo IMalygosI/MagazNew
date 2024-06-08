@@ -1,0 +1,92 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Magaz.user"
+        Title="user"
+		MaxWidth="1280" MaxHeight="854" MinWidth="1280" MinHeight="854"
+        WindowStartupLocation="CenterScreen">
+
+	<Window.Background>
+		<ImageBrush Source="./Assets/image.jpg"/>
+	</Window.Background>
+	<StackPanel>
+		<Button Name="digitalEat" Margin="0,150,1000,0"
+		        Foreground="Black" Height="290" Width="180"
+		        HorizontalAlignment="Right" VerticalAlignment="Center" CornerRadius="10">
+			<StackPanel>
+				<Image Source="./Assets/eat.jpg"
+				       Height="250" Width="600" Margin="3 10 0 3"/>
+				<TextBlock Foreground="White" HorizontalAlignment="Center" Margin="0 0 0 0"
+				           VerticalAlignment="Center" FontSize="17" FontWeight="DemiBold">
+					Продукты
+				</TextBlock>
+			</StackPanel>
+		</Button>
+		<Button Name="digitalTechnology" Margin="0,-290,700,0"
+		        Foreground="Black" Height="290" Width="180"
+		        HorizontalAlignment="Right" VerticalAlignment="Center" CornerRadius="10">
+			<StackPanel>
+				<Image Source="./Assets/tex.jpg"
+				       Height="250" Width="600" Margin="3 10 0 3"/>
+				<TextBlock Foreground="White" HorizontalAlignment="Center" Margin="0 0 0 0"
+				           VerticalAlignment="Center" FontSize="17" FontWeight="DemiBold">
+					Техника
+				</TextBlock>
+			</StackPanel>
+		</Button>
+		<Button Name="digitaldezda" Margin="0,-290,400,0"
+		        Foreground="Black" Height="290" Width="180"
+		        HorizontalAlignment="Right" VerticalAlignment="Center" CornerRadius="10">
+			<StackPanel>
+				<Image Source="./Assets/odezhdy.jpg"
+				       Height="250" Width="600" Margin="3 10 0 3"/>
+				<TextBlock Foreground="White" HorizontalAlignment="Center" Margin="0 0 0 0"
+				           VerticalAlignment="Center" FontSize="17" FontWeight="DemiBold">
+					Одежда
+				</TextBlock>
+			</StackPanel>
+		</Button>
+		<Button Name="digitalconselaria" Margin="0,-290,100,0"
+		        Foreground="Black" Height="290" Width="180"
+		        HorizontalAlignment="Right" VerticalAlignment="Center" CornerRadius="10">
+			<StackPanel>
+				<Image Source="./Assets/kantselyariya2.jpg"
+				       Height="250" Width="600" Margin="3 10 0 3"/>
+				<TextBlock Foreground="White" HorizontalAlignment="Center" Margin="0 0 0 0"
+				           VerticalAlignment="Center" FontSize="17" FontWeight="DemiBold">
+					Канцелярия
+				</TextBlock>
+			</StackPanel>
+		</Button>
+		<TextBlock Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="23"
+		           Margin="0 -350 0 0">
+			Товар
+		</TextBlock>
+		<Button Name="basket" Margin="0,-790,90,0"
+		        Foreground="Black" Height="83" Width="75"
+		        HorizontalAlignment="Right" VerticalAlignment="Center" CornerRadius="10">
+			<StackPanel>
+				<Image Source="./Assets/shop.jpg"
+				       Height="40" Width="40" Margin="3 10 0 3"/>
+				<TextBlock Foreground="White" HorizontalAlignment="Center"
+				           VerticalAlignment="Center" FontSize="13" FontWeight="DemiBold">
+					Корзина
+				</TextBlock>
+			</StackPanel>
+		</Button>
+		<Button Name="exit"  Margin="0,-806,10,-15"
+		        Foreground="Black" Height="83" Width="75"
+		        HorizontalAlignment="Right" VerticalAlignment="Center" CornerRadius="10">
+			<StackPanel>
+				<Image Source="./Assets/exit.jpg"
+				       Height="40" Width="40" Margin="3 10 0 3"/>
+				<TextBlock Foreground="White" HorizontalAlignment="Center"
+				           VerticalAlignment="Center" FontSize="13" FontWeight="DemiBold">
+					exit 
+				</TextBlock>
+			</StackPanel>
+		</Button>
+	</StackPanel>
+</Window>

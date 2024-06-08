@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Magaz/App.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/Delete.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/MainWindow.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/Redakt.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/admin.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/bagodarim.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/basket.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/basketA.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/digitalEat.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/digitalEatU.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/digitalTechnology.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/digitalTechnologyU.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/digitalconselaria.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/digitalconselariaU.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/digitaldezda.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/digitaldezdaU.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/error.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/error2.axaml" value="Magaz/Magaz.csproj" />
+        <entry key="Magaz/user.axaml" value="Magaz/Magaz.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

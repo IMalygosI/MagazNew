@@ -1,0 +1,91 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Magaz.digitalTechnologyU"
+        Title="digitalTechnologyU"
+		x:CompileBindings="False"
+        MaxWidth="1200" MaxHeight="700" MinWidth="1200" MinHeight="700"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        TransparencyLevelHint="AcrylicBlur">
+	<Panel>
+		<ExperimentalAcrylicBorder IsHitTestVisible="False">
+			<ExperimentalAcrylicBorder.Material>
+				<ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    TintColor="Black"
+                    TintOpacity="1"
+                    MaterialOpacity="0.15" />
+			</ExperimentalAcrylicBorder.Material>
+		</ExperimentalAcrylicBorder>
+		<Button Name="korz" Margin="0,0,100,600"
+						Foreground="Black" Height="83" Width="75"
+						HorizontalAlignment="Right" VerticalAlignment="Center" CornerRadius="10">
+			<StackPanel>
+				<Image Source="./Assets/shop.jpg"
+				       Height="40" Width="40" Margin="3 10 0 3"/>
+				<TextBlock Foreground="White" HorizontalAlignment="Center"
+				           VerticalAlignment="Center" FontSize="13" FontWeight="DemiBold">
+					Корзина
+				</TextBlock>
+			</StackPanel>
+		</Button>
+		<Button Name="magaz" Margin="0,0,10,600"
+		        Foreground="Black" Height="83" Width="75"
+		        HorizontalAlignment="Right" VerticalAlignment="Center" CornerRadius="10">
+			<StackPanel>
+				<Image Source="./Assets/exit.jpg"
+				       Height="40" Width="40" Margin="3 10 0 3"/>
+				<TextBlock Foreground="White" HorizontalAlignment="Center"
+				           VerticalAlignment="Center" FontSize="13" FontWeight="DemiBold">
+					exit
+				</TextBlock>
+			</StackPanel>
+		</Button>
+		<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+				   Margin="0 0 0 500"
+                   FontSize="23" Foreground="White">
+			Техника
+		</TextBlock>
+		<ListBox Height="500" Width="900" Margin="0 30 0 0" CornerRadius="23"
+				 x:Name="AAA">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Border
+						BorderThickness="2"
+						CornerRadius="9"
+						BorderBrush="Black">
+						<Grid ShowGridLines="False">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="0.1*" />
+								<ColumnDefinition Width="0.3*" />
+								<ColumnDefinition Width="0.088*" />
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="170"></RowDefinition>
+								<RowDefinition Height="Auto"></RowDefinition>
+								<RowDefinition Height="Auto"></RowDefinition>
+							</Grid.RowDefinitions>
+							<Image VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0"
+								   Width="150" Height="250" Source="{Binding image}"></Image>
+							<TextBlock Text="Название:" HorizontalAlignment="Left" FontWeight="Black"
+									   VerticalAlignment="Top" Grid.Column="1"/>
+							<TextBlock Text="{Binding ProductName}" HorizontalAlignment="Center"
+									   VerticalAlignment="Top" Grid.Column="1"/>
+							<TextBlock Text="Цена:"  HorizontalAlignment="Right" Margin="0 0 0 0" FontWeight="Black"
+									   VerticalAlignment="Top" Grid.Column="1"/>
+							<TextBlock Text="{Binding PraiseProduct}" HorizontalAlignment="Left" Margin="0 1 0 0"
+									   VerticalAlignment="Top" Grid.Column="2" TextWrapping="Wrap"/>
+							<Button Background="#CC5801" Tag="{Binding Id}" HorizontalAlignment="Center" Margin="0 135 0 0" Height="30" Width="150"
+									   VerticalAlignment="Center"	Grid.Column="2" Click="inkorz" Name="inkorz" Classes="inkorzB">
+								<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White">В корзину</TextBlock>
+							</Button>
+						</Grid>
+					</Border>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+	</Panel>
+</Window>

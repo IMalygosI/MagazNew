@@ -1,0 +1,63 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Magaz.App"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+    <Application.Styles>
+		<Style Selector="Button.inkorzB">
+			<Setter Property="Background" Value="#CC5801"/>
+			<Style Selector="^:pointerover /template/ContentPresenter">
+				<Setter Property="Background" Value="#CC5801"/>
+			</Style>
+		</Style>
+		<Style Selector="Button.redaktB">
+			<Setter Property="Background" Value="#CC5801"/>
+			<Style Selector="^:pointerover /template/ContentPresenter">
+				<Setter Property="Background" Value="#CC5801"/>
+			</Style>
+		</Style>
+		<Style Selector="Button.UbratB">
+			<Setter Property="Background" Value="#CC5801"/>
+			<Style Selector="^:pointerover /template/ContentPresenter">
+				<Setter Property="Background" Value="#CC5801"/>
+			</Style>
+		</Style>
+	    <Style Selector="Button.magazin">
+		    <Setter Property="Background" Value="#CC5801"/>
+		    <Style Selector="^:pointerover /template/ContentPresenter">
+			    <Setter Property="Background" Value="#CC5801"/>
+		    </Style>
+	    </Style>
+	    <Style Selector="Button.Oplata1">
+		    <Setter Property="Background" Value="#CC5801"/>
+		    <Style Selector="^:pointerover /template/ContentPresenter">
+			    <Setter Property="Background" Value="#CC5801"/>
+		    </Style>
+	    </Style>
+	    <Style Selector="Button.sign1">
+		    <Setter Property="Background" Value="Gray"/>
+		    <Style Selector="^:pointerover /template/ContentPresenter">
+			    <Setter Property="Background" Value="Gray"/>
+		    </Style>
+	    </Style>
+	    <Style Selector="Button.error">
+		    <Setter Property="Background" Value="Gray"/>
+		    <Style Selector="^:pointerover /template/ContentPresenter">
+			    <Setter Property="Background" Value="Gray"/>
+		    </Style>
+	    </Style>
+	    <Style Selector="Button.Otmen1">
+		    <Setter Property="Background" Value="DarkRed"/>
+		    <Style Selector="^:pointerover /template/ContentPresenter">
+			    <Setter Property="Background" Value="DarkRed"/>
+		    </Style>
+	    </Style>
+	    <Style Selector="Button.Postavka">
+		    <Setter Property="Background" Value="DarkGreen"/>
+		    <Style Selector="^:pointerover /template/ContentPresenter">
+			    <Setter Property="Background" Value="DarkGreen"/>
+		    </Style>
+	    </Style>
+        <FluentTheme />
+    </Application.Styles>
+</Application>

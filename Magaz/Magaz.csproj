@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.0.10" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.10" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.10" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.10" />
+    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="error.axaml.cs">
+      <DependentUpon>error.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Redakt.axaml.cs">
+      <DependentUpon>Redakt.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\administrator.jpg" />
+    <AvaloniaResource Include="Assets\administrator.jpg" />
+    <None Remove="Assets\Baton.jpg" />
+    <AvaloniaResource Include="Assets\Baton.jpg" />
+    <None Remove="Assets\chocolate.jpg" />
+    <AvaloniaResource Include="Assets\chocolate.jpg" />
+    <None Remove="Assets\default_image.jpg" />
+    <AvaloniaResource Include="Assets\default_image.jpg" />
+    <None Remove="Assets\deletef.jpg" />
+    <AvaloniaResource Include="Assets\deletef.jpg" />
+    <None Remove="Assets\eat.jpg" />
+    <AvaloniaResource Include="Assets\eat.jpg" />
+    <None Remove="Assets\exit.jpg" />
+    <AvaloniaResource Include="Assets\exit.jpg" />
+    <None Remove="Assets\image.jpg" />
+    <AvaloniaResource Include="Assets\image.jpg" />
+    <None Remove="Assets\kantselyariya.jpg" />
+    <AvaloniaResource Include="Assets\kantselyariya.jpg" />
+    <None Remove="Assets\kantselyariya2.jpg" />
+    <AvaloniaResource Include="Assets\kantselyariya2.jpg" />
+    <None Remove="Assets\Konfet.jpg" />
+    <AvaloniaResource Include="Assets\Konfet.jpg" />
+    <None Remove="Assets\Kyrtka.jpg" />
+    <AvaloniaResource Include="Assets\Kyrtka.jpg" />
+    <None Remove="Assets\Milk.jpg" />
+    <AvaloniaResource Include="Assets\Milk.jpg" />
+    <None Remove="Assets\nout.jpg" />
+    <AvaloniaResource Include="Assets\nout.jpg" />
+    <None Remove="Assets\odezhdy.jpg" />
+    <AvaloniaResource Include="Assets\odezhdy.jpg" />
+    <None Remove="Assets\penal.jpg" />
+    <AvaloniaResource Include="Assets\penal.jpg" />
+    <None Remove="Assets\pero.jpg" />
+    <AvaloniaResource Include="Assets\pero.jpg" />
+    <None Remove="Assets\PK.jpg" />
+    <AvaloniaResource Include="Assets\PK.jpg" />
+    <None Remove="Assets\rycka.jpg" />
+    <AvaloniaResource Include="Assets\rycka.jpg" />
+    <None Remove="Assets\shop.jpg" />
+    <AvaloniaResource Include="Assets\shop.jpg" />
+    <None Remove="Assets\tex.jpg" />
+    <AvaloniaResource Include="Assets\tex.jpg" />
+    <None Remove="Assets\TV.jpg" />
+    <AvaloniaResource Include="Assets\TV.jpg" />
+    <None Remove="Assets\user.jpg" />
+    <AvaloniaResource Include="Assets\user.jpg" />
+    <None Remove="Assets\zagluska.jpg" />
+    <AvaloniaResource Include="Assets\zagluska.jpg" />
+  </ItemGroup>
+</Project>
