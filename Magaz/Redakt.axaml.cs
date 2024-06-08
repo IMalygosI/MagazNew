@@ -24,9 +24,16 @@ public partial class Redakt : Window
 
         prise.Text = Convert.ToString(ShopTab.SaveMagaz.Product[ShopTab.massiv[0]].PraiseProduct);
         name.Text = ShopTab.SaveMagaz.Product[ShopTab.massiv[0]].ProductName;
+        TypeVibor.Text = Convert.ToString(ShopTab.SaveMagaz.Product[ShopTab.massiv[0]].TypeProduct);
         SelectedImage = ShopTab.SaveMagaz.Product[ShopTab.massiv[0]].Sourse;
-        img_preview.Source = new Bitmap($"Asset/{SelectedImage}");
-        TypeVibor.Text =  Convert.ToString(ShopTab.SaveMagaz.Product[ShopTab.massiv[0]].TypeProduct);
+        if (SelectedImage != null)
+        {
+            img_preview.Source = new Bitmap($"Asset/{SelectedImage}");
+        }
+        else
+        {
+            img_preview.Source = new Bitmap("Asset/default_image.jpg");
+        }
     }
     string SelectedImage;
     
@@ -43,16 +50,16 @@ public partial class Redakt : Window
                 III = TypeVibor.Text;
                 break;
             case 1:
-                III = "Техника";
+                III = "РўРµС…РЅРёРєР°";
                 break;
             case 2:
-                III = "Продукты";
+                III = "РџСЂРѕРґСѓРєС‚С‹";
                 break;
             case 3:
-                III = "Канцелярия";
+                III = "РљР°РЅС†РµР»СЏСЂРёСЏ";
                 break;
             case 4:
-                III = "Одежда";
+                III = "РћРґРµР¶РґР°";
                 break;
         }
         ShopTab.SaveMagaz.Product[ShopTab.massiv[0]].Sourse = SelectedImage;
@@ -64,7 +71,7 @@ public partial class Redakt : Window
     private readonly FileDialogFilter fileFilter = new()
     {
         Extensions = new System.Collections.Generic.List<string>() {"png", "jpg", "jpeg"},
-        Name = "Файлы изображений"
+        Name = "Р¤Р°Р№Р»С‹ РёР·РѕР±СЂР°Р¶РµРЅРёР№"
     };
     private async void ImageSelection(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
